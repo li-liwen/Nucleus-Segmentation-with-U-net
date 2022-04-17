@@ -1,5 +1,6 @@
 # Nucleus Segmentation with U net
-Based on U-net architecture, trained on Pannuke dataset.<br/>
+Based on U-net architecture, trained on Pannuke dataset.
+
 Input image & predicted mask resolution: 256x256 
 
 # Result
@@ -29,6 +30,7 @@ Loss function inspired from: [Using Intersection over Union loss to improve Bina
 <br/><br/>
 
 ## Metric:
+
 ```python
 def Dice_Score(y_true, y_pred):
     y_true = tf.cast(y_true, tf.float32)
@@ -40,3 +42,8 @@ def Dice_Score(y_true, y_pred):
     score = tf.math.divide(tf.reduce_sum(inter), tf.reduce_sum(union))
     return score
 ```
+
+# DataSets
+[Original Dataset (Numpy format)](https://jgamper.github.io/PanNukeDataset/)
+
+[Exported Dataset (PNG format) and Pretrained Model (TensorFlow)](https://www.kaggle.com/datasets/llwlabs/pannuke)
