@@ -1,7 +1,6 @@
 # Nucleus Segmentation with U net
 Based on U-net architecture, trained on Pannuke dataset.<br/>
 Input image & predicted mask resolution: 256x256 
-<br/><br/>
 
 # Result
 ### Dice Score: 85.1%
@@ -12,7 +11,6 @@ Input image & predicted mask resolution: 256x256
 # U-Net Architecture
 ![U-Net](U-Net.png)
 [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
-<br/><br/>
 
 # Loss Function and Metric
 
@@ -43,5 +41,3 @@ def Dice_Score(y_true, y_pred):
     score = tf.math.divide(tf.reduce_sum(inter), tf.reduce_sum(union))
     return score
 ```
-<br/><br/>
-
