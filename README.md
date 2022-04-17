@@ -6,7 +6,6 @@ Input image & predicted mask resolution: 256x256
 ### Dice Score: 85.1%
 ### Accuracy: >95%
 <img src="result/result.gif" alt="show"/>
-<br/><br/>
 
 # U-Net Architecture
 ![U-Net](U-Net.png)
