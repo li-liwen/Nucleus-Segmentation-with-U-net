@@ -13,9 +13,8 @@ Input image & predicted mask resolution: 256x256
 [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
 
 # Loss Function and Metric
-<br/>
 
-## Loss Function:
+**Loss Function:**
 
 ```python
 def Dice_Loss(y_true, y_pred):
@@ -29,9 +28,8 @@ def Dice_Loss(y_true, y_pred):
     return loss
 ```
 Loss function inspired from: [Using Intersection over Union loss to improve Binary Image Segmentation](https://www.semanticscholar.org/paper/Using-Intersection-over-Union-loss-to-improve-Image-Beers/b0095bffa2cb5b487d690a0bf9b3bf529126c417)
-<br/><br/>
 
-## Metric:
+**Metric:**
 
 ```python
 def Dice_Score(y_true, y_pred):
