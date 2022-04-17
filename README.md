@@ -13,8 +13,10 @@ Input image & predicted mask resolution: 256x256
 [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
 
 # Loss Function and Metric
+<br/>
 
 ## Loss Function:
+
 ```python
 def Dice_Loss(y_true, y_pred):
     y_true = tf.cast(y_true, tf.float32)
