@@ -3,7 +3,7 @@ Based on U-net architecture, trained on Pannuke dataset.
 
 Input image & predicted mask resolution: 256x256 
 
-# Result
+# Results
 ### Dice Score: 85.1%
 ### Accuracy: >95%
 <img src="result/result.gif" alt="show"/>
@@ -47,3 +47,4 @@ def Dice_Score(y_true, y_pred):
 [Original Dataset (Numpy format)](https://jgamper.github.io/PanNukeDataset/)
 
 [Exported Dataset (PNG format) and Pretrained Model (TensorFlow)](https://www.kaggle.com/datasets/llwlabs/pannuke)
+
